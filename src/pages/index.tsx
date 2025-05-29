@@ -8,19 +8,19 @@ export default function HomePage() {
   const gotoPic1 = () => {
     // 处理点击事件
     console.log('gotoPic1');
-    navigate('/docs?name=1&zh=入院宣教');
+    navigate('/docs?name=1&zh=入院当天');
   };
 
   const gotoPic2 = () => {
     // 处理点击事件
     console.log('gotoPic2');
-    navigate('/docs?name=2&zh=术前宣教');
+    navigate('/docs?name=2&zh=术前一天');
   };
 
   const gotoPic3 = () => {
     // 处理点击事件
     console.log('gotoPic3');
-    navigate('/docs?name=3&zh=术后宣教');
+    navigate('/docs?name=3&zh=术后第一天');
   };
 
   const gotoPic4 = () => {
@@ -29,10 +29,10 @@ export default function HomePage() {
     navigate('/docs?name=4&zh=出院宣教');
   };
 
-  const gotoTest = () => {
+  const gotoPic5 = () => {
     // 处理点击事件
     console.log('gotoTest');
-    window.open('https://kaoshi.wjx.top/vm/Qw7o1RX.aspx', '_blank');
+      navigate('/docs?name=5&zh=出院前一天');
   };
 
   return (
@@ -46,9 +46,7 @@ export default function HomePage() {
           left: '10vw',
         }}
         onClick={gotoPic1}
-      >
-        入院宣教
-      </button>
+      >入院当天</button>
       <button
         className="button-apple"
         style={{
@@ -56,9 +54,7 @@ export default function HomePage() {
           left: '27vw',
         }}
         onClick={gotoPic2}
-      >
-        术前宣教
-      </button>
+      >术前一天</button>
       <button
         className="button-apple"
         style={{
@@ -66,9 +62,7 @@ export default function HomePage() {
           left: '54vw',
         }}
         onClick={gotoPic3}
-      >
-        术后宣教
-      </button>
+      >手术当天</button>
       <button
         className="button-apple"
         style={{
@@ -76,19 +70,15 @@ export default function HomePage() {
           right: '10vw',
         }}
         onClick={gotoPic4}
-      >
-        出院宣教
-      </button>
+      >术后第一天</button>
       <button
         className="button-apple"
         style={{
           top: '34vh',
           right: '40vw',
         }}
-        onClick={gotoTest}
-      >
-        测试问卷
-      </button>
+        onClick={gotoPic5}
+      >出院前一天</button>
     </div>
   );
 }

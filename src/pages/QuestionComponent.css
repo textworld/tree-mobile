@@ -1,0 +1,66 @@
+/* QuestionComponent.css */
+.question-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 1.5rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    width: 90%;
+}
+
+.question-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.option-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.option-item {
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    min-height: 3rem;
+}
+
+.option-item:hover:not([style*="background-color"]) {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+.option-prefix {
+    font-weight: 600;
+    margin-right: 0.5rem;
+    min-width: 1.5rem;
+}
+
+.option-text {
+    line-height: 1.4;
+}
+
+/* 移动端适配 */
+@media (max-width: 640px) {
+    .question-card {
+        padding: 1.25rem;
+        border-radius: 10px;
+    }
+
+    .question-title {
+        font-size: 1.1rem;
+    }
+
+    .option-item {
+        padding: 0.875rem;
+        border-radius: 6px;
+    }
+}
