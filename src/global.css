@@ -71,6 +71,22 @@ body, html{
     font-size: 0.9rem;
   }
 
+  .button-apple-clicked {
+    position: absolute;
+    background-color: transparent;
+    display: inline-block;
+    width: 20vw;
+    height: 20vw;
+    border: 0px;
+    color: white;
+    line-height: 24vw;
+    background-size: cover;
+    font-size: 0.9rem;
+    background-image: url('https://tree.textworld.cn/images/apple-clicked.png');
+  }
+
+  
+
   
 .container {
     height: 100%;

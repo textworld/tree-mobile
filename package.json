@@ -11,6 +11,7 @@
   "dependencies": {
     "antd-mobile": "^5.37.1",
     "classnames": "^2.5.1",
+    "http-parser-js": "^0.5.10",
     "react-router-dom": "^6.26.2",
     "umi": "^4.3.20"
   },
